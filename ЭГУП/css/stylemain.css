@@ -1,0 +1,126 @@
+   body {
+   
+    
+   }
+   h1 {
+    font-size: 36px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+    color: #fc6; /* Цвет текста */
+   }
+   h2 {
+    margin-top: 0; /* Убираем отступ сверху */
+   }
+   #header { /* Верхний блок */
+    background: #0080c0; /* Цвет фона */
+    padding: 20px 50px 70px 20px; /* Поля вокруг текста */
+   }   
+   
+   #content { /* Правая колонка */
+    margin: 10px 5px 20px 40px; /* Значения отступов */
+    padding: 5px; /* Поля вокруг текста */
+    border: 1px solid #333; /* Параметры рамки */
+    position: absolute;
+    z-index: -1;
+   }
+   #footer { /* Нижний блок */
+    background: #333; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    clear: left; /* Отменяем действие float */
+   } 
+   .title {
+   text-align:  center;
+   }  
+   .author {
+   text-align: right;
+        padding: 155px 130px 5px 20px;
+   }
+   .button_start {
+    background: none repeat scroll 0 0 #79BBFF;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 0 #CAE3FC inset;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 200px;
+    padding: 6px 40px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #287ACE;
+}
+.button_start:hover {
+    background: none repeat scroll 0 0 #4197EE;
+    color: #DA0000;
+}
+#book
+{
+    margin:30px;
+}
+.title
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+.recent
+{
+    padding: 10px 75px;
+    text-align: justify;
+}
+/* Выпадающее меню */ 
+   *{
+    margin:0;
+    padding:0;
+}
+
+
+
+#toppanel{
+    position:fixed;
+    left:0;
+    top:0;
+    width:320px;
+}
+#slidepanel{
+    text-align:left;
+    width:320px;
+    margin-top: 0;
+}
+#toggle{
+  background-image: url("images/menu.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 193px;
+    outline: medium none;
+    position: absolute;
+    right: -40px;
+    text-indent: -99999px;
+    top: 0;
+    width: 40px;}
+	
+	#toggle_right{
+  background-image: url("images/spravka.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 193px;
+    outline: medium none;
+    position: absolute;
+    right: 0px;
+    text-indent: -99999px;
+    top: 0;
+    width: 40px;
+	/*margin-left: -200px;*/}
+	
+	#toppanel_right{
+    position:fixed;
+    right:0;
+    top:0;
+    width:320px;
+z-index: -9;
+}
+#slidepanel_right{
+    text-align:left;
+    width:320px;
+    margin-top: 0;
+		
+}

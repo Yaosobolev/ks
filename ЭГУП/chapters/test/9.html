@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+    <HEAD>
+          <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+          <META NAME="Generator" CONTENT="Macro HTML 1.40 beta">
+          <TITLE>Тесты для самоконтроля</TITLE>
+          <style type="text/css">
+          <!--
+          A  {text-decoration:none; color: #406A95}
+          A:Visited  {text-decoration:none;}
+          A:Active  {text-decoration:none;}
+          A:Hover  {text-decoration:underline; color:#ff4400;}
+
+          P {text-indent:25; text-align:justify;}
+          -->
+          </style>
+
+
+
+    </HEAD>
+<BODY BACKGROUND="back_3.jpg" bottommargin="0" leftmargin="6" topmargin="0">
+
+    <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+
+
+			<TD width=850>	 <a name="3"></a>
+<div align="center">
+
+		</div>
+ 			<HR>
+
+
+
+
+
+<body>
+<Font size=4>
+<body bgcolor="#F3F3F3"  text="black" lang=RU link="blue"
+vlink="purple" style='tab-interval:35.4pt'>
+
+
+<Div align=justify><h1>Тесты для самоконтроля </h1>
+
+<Script Language="JavaScript">
+<!--Начало сценария
+
+var res="2144312111"
+
+function test1()
+{
+
+	var count=0
+	with(document.test)
+	{
+		if(!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked&&!Q1[4].checked){count+=1};
+		if(!Q2[0].checked&&!Q2[1].checked&&!Q2[2].checked&&!Q2[3].checked&&!Q2[4].checked){count+=1};
+		if(!Q3[0].checked&&!Q3[1].checked&&!Q3[2].checked&&!Q3[3].checked&&!Q3[4].checked){count+=1};
+		if(!Q4[0].checked&&!Q4[1].checked&&!Q4[2].checked&&!Q4[3].checked&&!Q4[4].checked){count+=1};
+		if(!Q5[0].checked&&!Q5[1].checked&&!Q5[2].checked&&!Q5[3].checked&&!Q5[4].checked){count+=1};
+                if(!Q6[0].checked&&!Q6[1].checked&&!Q6[2].checked&&!Q6[3].checked&&!Q6[4].checked){count+=1};
+                if(!Q7[0].checked&&!Q7[1].checked&&!Q7[2].checked&&!Q7[3].checked&&!Q7[4].checked){count+=1};
+                if(!Q8[0].checked&&!Q8[1].checked&&!Q8[2].checked&&!Q8[3].checked&&!Q8[4].checked){count+=1};
+                if(!Q9[0].checked&&!Q9[1].checked&&!Q9[2].checked&&!Q9[3].checked&&!Q9[4].checked){count+=1};
+                if(!Q10[0].checked&&!Q10[1].checked&&!Q10[2].checked&&!Q10[3].checked&&!Q10[4].checked){count+=1};
+
+		if (count>0) {alert("Не торопитесь. Вы ответили не на все вопросы!")}
+		else answer()
+	}
+}
+
+function control(k,f1,f2,f3,f4,f5)
+{
+	if (k==1&&f1.checked)return true;
+	if (k==2&&f2.checked)return true;
+	if (k==3&&f3.checked)return true;
+	if (k==4&&f4.checked)return true;
+	if (k==5&&f5.checked)return true;
+	return false;
+}
+
+function answer()
+	{
+	answ="";
+	with(document)
+	{
+		answ+=control(res.charAt(0),test.Q1[0],test.Q1[1],test.Q1[2],test.Q1[3],test.Q1[4])?"1":"0";
+		answ+=control(res.charAt(1),test.Q2[0],test.Q2[1],test.Q2[2],test.Q2[3],test.Q2[4])?"1":"0";
+		answ+=control(res.charAt(2),test.Q3[0],test.Q3[1],test.Q3[2],test.Q3[3],test.Q3[4])?"1":"0";
+		answ+=control(res.charAt(3),test.Q4[0],test.Q4[1],test.Q4[2],test.Q4[3],test.Q4[4])?"1":"0";
+		answ+=control(res.charAt(4),test.Q5[0],test.Q5[1],test.Q5[2],test.Q5[3],test.Q5[4])?"1":"0";
+                answ+=control(res.charAt(5),test.Q6[0],test.Q6[1],test.Q6[2],test.Q6[3],test.Q6[4])?"1":"0";
+                answ+=control(res.charAt(6),test.Q7[0],test.Q7[1],test.Q7[2],test.Q7[3],test.Q7[4])?"1":"0";
+                answ+=control(res.charAt(7),test.Q8[0],test.Q8[1],test.Q8[2],test.Q8[3],test.Q8[4])?"1":"0";
+                answ+=control(res.charAt(8),test.Q9[0],test.Q9[1],test.Q9[2],test.Q9[3],test.Q9[4])?"1":"0";
+                answ+=control(res.charAt(9),test.Q10[0],test.Q10[1],test.Q10[2],test.Q10[3],test.Q10[4])?"1":"0";
+
+
+	showResult();
+	}
+}
+function showResult(){
+	var nok=0;
+	var i,s;
+	for (i=0;i<answ.length;i++)
+	{
+		nok+=answ.charAt(i)=="1"?1:0;
+	}
+	if(nok<=5) s='"НЕУДОВЛЕТВОРИТЕЛЬНО"';
+	if(nok>5 && nok<7) s='"УДОВЛЕТВОРИТЕЛЬНО"';
+	if(nok==7) s='"УДОВЛЕТВОРИТЕЛЬНО"';
+	if(nok>7 && nok<8) s='"ХОРОШО"';
+	if(nok==8) s='"ХОРОШО"';
+	if(nok>9) s='"ОТЛИЧНО"';
+	document.test.s1.value="Количество правильных ответов "+nok+
+		". Ваша оценка "+s+". Загляните в окно рядом с номером вопроса. Если"+
+		" Вы ответили правильно, то там (+), если Вы ошиблись, то там (-).";
+	with(document.test)
+	{
+		if(answ.charAt(0)=="1"){T1.value=" +"}
+			else {T1.value=" -"};
+		if(answ.charAt(1)=="1"){T2.value=" +"}
+			else {T2.value=" -"};
+		if(answ.charAt(2)=="1"){T3.value=" +"}
+			else {T3.value=" -"};
+		if(answ.charAt(3)=="1"){T4.value=" +"}
+			else {T4.value=" -"};
+		if(answ.charAt(4)=="1"){T5.value=" +"}
+			else {T5.value=" -"};
+		if(answ.charAt(5)=="1"){T6.value=" +"}
+			else {T6.value=" -"};
+		if(answ.charAt(6)=="1"){T7.value=" +"}
+			else {T7.value=" -"};
+		if(answ.charAt(7)=="1"){T8.value=" +"}
+			else {T8.value=" -"};
+		if(answ.charAt(8)=="1"){T9.value=" +"}
+			else {T9.value=" -"};
+		if(answ.charAt(9)=="1"){T10.value=" +"}
+			else {T10.value=" -"};
+
+}
+}
+
+//--Конец сценария-->
+</script>
+
+</head>
+<body bgcolor="white">
+<form name=test>
+
+
+<ol>
+	<li>
+	<h4> <input type=text name=T1 size=1 value=''>Почему технология беспроводной связи IEEE 802.11 позволяет осуществлять передачу данных на большие расстояние, чем технология Bluetooth?</h4>
+	<input type=radio name=Q1> Передача осуществляется на гораздо более низких частотах;<br>
+	<input type=radio name=Q1> Имеет более значительную выходную мощность;<br>
+	<input type=radio name=Q1> Передача осуществляется на гораздо более высоких частотах;<br>
+	<input type=radio name=Q1> Используется более совершенные методы шифрования;<br>
+	<input type=radio name=Q1> Имеет более значительную входную мощность.<br>
+
+<br>
+
+	<li>
+	<h4> <input type=text name=T2 size=1 value=''>Укажите преимущества технологии беспроводной связи перед технологией локальных сетей.</h4>
+	<input type=radio name=Q2> Более низкая стоимость обслуживания;<br>
+	<input type=radio name=Q2> Большая дальность передачи;<br>
+	<input type=radio name=Q2> Более высокий уровень безопасности;<br>
+	<input type=radio name=Q2> Более дешевые адаптеры узлов;<br>
+	<input type=radio name=Q2> Лучшее качество сигнала.<br>
+<br>
+
+	<li>
+	<h4> <input type=text name=T3 size=1 value=''>Какой стандарт технологии беспроводной связи обеспечивает максимальную совместимость с предыдущими стандартами беспроводной связи, но при этом демонстрирует более высокую производительность?</h4>
+	<input type=radio name=Q3> 802.11а;<br>
+	<input type=radio name=Q3> 802.11b;<br>
+	<input type=radio name=Q3> 802.11g;<br>
+	<input type=radio name=Q3> 802.11n;<br>
+	<input type=radio name=Q3> 802.11а.<br>
+<br>
+
+	<li>
+	<h4> <input type=text name=T4 size=1 value=''>Какой диапазон спектра электромагнитного излучения обычно используется в беспроводных LAN?</h4>
+	<input type=radio name=Q4> Bluetooth;<br>
+	<input type=radio name=Q4> Инфракрасный диапазон;<br>
+	<input type=radio name=Q4> Диапазон для промышленных, научных и медицинских целей;<br>
+	<input type=radio name=Q4> Радиочастотный диапазон;<br>
+	<input type=radio name=Q4> Спутниковая связь.<br>
+	<br>
+
+	<li>
+	<h4> <input type=text name=T5 size=1 value=''>В процессе обследования зоны разработчик сети обратил внимание, что какие-то посторонние люди получают доступ к беспроводной сети компании с парковки. Что следует сделать, чтобы прекратить распространение беспроводного сигнала на парковку?</h4>
+	<input type=radio name=Q5> Изменить канал беспроводной точки доступа; <br>
+	<input type=radio name=Q5> Подключить беспроводную точку доступа к межсетевому экрану;<br>
+	<input type=radio name=Q5> Изменить тип антенны, присоединенной к точке доступа;<br>
+    <input type=radio name=Q5> Переместить беспроводную точку доступа в защищенную VLAN;<br>
+	<input type=radio name=Q5> Переместить беспроводную точку доступа в порт коммутатора уровня 3.<br>
+	<br>
+<li>
+	<h4> <input type=text name=T6 size=1 value=''> Какие полосы называются ISM-полосами (Industrial, Scientific, Medical) - полосы для использования промышленных, научных и медицинских приборов.</h4>
+	<input type=radio name=Q6> Электромагнитные диапазоны частот 900 МГц, 2,4 ГГц и 5 ГГц;<br>
+	<input type=radio name=Q6> Сотовая связь;<br>
+	<input type=radio name=Q6> Инфракрасные волны;<br>
+	<input type=radio name=Q6> Телевидение;<br>
+	<input type=radio name=Q6> Коротковолновое радио.<br>
+	<br>
+<li>
+	<h4> <input type=text name=T7 size=1 value=''>На какой частоте работает стандарт 802.11 b/g/n?</h4>
+	<input type=radio name=Q7> 902-928 МГц;<br>
+	<input type=radio name=Q7> 2,400-2,4835 ГГц;<br>
+	<input type=radio name=Q7> 5,725-5,850 ГГц;<br>
+	<input type=radio name=Q7> 10-15 ГГц;<br>
+	<input type=radio name=Q7> 20-25 ГГц.<br>
+	<br>
+
+<li>
+	<h4> <input type=text name=T8 size=1 value=''> Укажите, о каком преимуществе беспроводной технологии идет речь? Беспроводные сети предоставляют возможность простого подключения как стационарных, так и мобильных клиентов.</h4>
+	<input type=radio name=Q8> Мобильность;<br>
+        <input type=radio name=Q8> Масштабируемость;<br>
+	<input type=radio name=Q8> Гибкость;<br>
+	<input type=radio name=Q8> Снижение затрат;<br>
+	<input type=radio name=Q8> Уменьшение времен установки.<br>
+	<br>
+
+<li>
+	<h4> <input type=text name=T9 size=1 value=''> Какой тип беспроводных сетей использует РЧ-технологию и соответствует требованиям стандартов IEEE 802.11. В таких сетях пользователи могут подключаться к проводной сети с помощью устройств, именуемых точками доступа (Access Point, AP)?  </h4>
+	<input type=radio name=Q9> WLAN;<br>
+	<input type=radio name=Q9> WWAN;<br>
+	<input type=radio name=Q9> WPAN;<br>
+        <input type=radio name=Q9> WRAN;<br>
+	<input type=radio name=Q9> WTAN.<br>
+	<br>
+<li>
+	<h4> <input type=text name=T10 size=1 value=''> Какой стандарт беспроводных локальных сетей обеспечивает передачу данных со скоростью 54 Мбит/с и использует РЧ спектр 5 ГГц?</h4>
+	<input type=radio name=Q10> IEEE 802.11a;<br>
+	<input type=radio name=Q10> IEEE 802.11b;<br>
+	<input type=radio name=Q10> IEEE 802.11g;<br>
+	<input type=radio name=Q10> IEEE 802.11n;<br>
+	<input type=radio name=Q10> IEEE 802.11c.<br>
+	<br>
+
+
+
+
+
+
+</ol>
+
+<center>
+<input type=button value="Показать результат" onClick=test1()>
+<p>
+<textarea rows=5 cols=70 name=s1></textarea>
+</p>
+<input type=reset value="Очистить выбранные пункты">
+
+</form>
+<br>
+
+</div>
+
+<HR>
+<BR><Div align=center>
+	 <a href="#3">В начало страницы</a>
+    </div><br>
+</font>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,483 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>Сети и телекоммуникации</title>
+
+  <link href="css/stylemain.css" rel="stylesheet" type="text/css" media="all" />
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<script src="js/jquery-1.8.2.js" type="text/javascript"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/mootools.js"></script>
+
+<script type="text/javascript">
+window.addEvent('domready', function() {
+    var myHorizontalSlide = new Fx.Slide('slidepanel', {mode: 'horizontal'});
+    myHorizontalSlide.hide();
+    $('toggle').addEvent('click', function(e){
+        e.stop();
+        myHorizontalSlide.toggle();
+    });
+});
+</script>
+
+<script type="text/javascript">
+window.addEvent('domready', function() {
+    var myHorizontalSlide = new Fx.Slide('toppanel', {mode: 'horizontal'});
+    myHorizontalSlide.hide();
+    $('toggle').addEvent('click', function(e){
+        e.stop();
+        myHorizontalSlide.toggle();
+    });
+});
+</script>
+
+
+<script type="text/javascript">
+window.addEvent('domready', function() {
+    var myHorizontalSlide = new Fx.Slide('slidepanel_right', {mode: 'horizontal'});
+    myHorizontalSlide.hide();
+    $('toggle_right').addEvent('click', function(e){
+        e.stop();
+       $('toppanel_right').style.zIndex = 0;
+        myHorizontalSlide.toggle();
+
+    });
+});
+</script>
+
+<!--<script type="text/javascript">
+window.addEvent('domready', function() {
+    var myHorizontalSlide = new Fx.Slide('toppanel_right', {mode: 'horizontal'});
+    myHorizontalSlide.hide();
+    $('toggle_right').addEvent('click', function(e){
+        e.stop();
+        myHorizontalSlide.toggle();
+    });
+});
+</script>     -->
+
+ </head>
+ <body>
+
+ <div id="toppanel">
+    <div id="slidepanel">
+    <!-- Содержимое панели -->
+
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+ <li class="nav-header" ><a href="./chapters/vvedenie.html" target="content-frame">Введение</a></li>
+
+
+    			<li class="nav-header" data-toggle="collapse" data-target="#ch1">
+    				<a href="./chapters/1.html" target="content-frame">1 Основы сетей передачи данных</a>
+    			</li>
+    			<div id="ch1" class="collapse">
+    				<li><a href="./chapters/1.html#ch1" target="content-frame">1.1 Знакомство с компьютерными сетями</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch1.1" target="content-frame">1.1.1 Понятие &laquo;вычислительная сеть&raquo;</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch1.2" target="content-frame">1.1.2 Преимущества компьютерных сетей</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch1.3" target="content-frame">1.1.3 Основные компоненты сети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch1.4" target="content-frame">1.1.4 Роли компьютеров в сети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch1.5" target="content-frame">1.1.5 Одноранговые сети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch1.6" target="content-frame">1.1.6 Топологии сетей</a></li></div>
+					<li><a href="./chapters/1.html#ch2" target="content-frame">1.2 Принципы связи</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch2.1" target="content-frame">1.2.1 Источник, канал и адресат</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch2.2" target="content-frame">1.2.2 Правила обмена данными</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch2.3" target="content-frame">1.2.3 Кодирование сообщения</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch2.4" target="content-frame">1.2.4 Форматирование сообщения</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch2.5" target="content-frame">1.2.5 Размер сообщения</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch2.6" target="content-frame">1.2.6 Синхронизация сообщения</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch2.7" target="content-frame">1.2.7 Методы рассылки сообщений</a></li></div>
+    				<li><a href="./chapters/1.html#ch3" target="content-frame">1.3 Обмен данными в проводной локальной сети</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch3.1" target="content-frame">1.3.1 Важность протоколов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch3.2" target="content-frame">1.3.2 Стандартизация протоколов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch3.3" target="content-frame">1.3.3 Физическая адресация</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch3.4" target="content-frame">1.3.4 Обмен данными в Ethernet</a></li></div>
+    				<li><a href="./chapters/1.html#ch4" target="content-frame">1.4 Логическая адресация</a></li>
+    				<li><a href="./chapters/1.html#ch5" target="content-frame">1.5 Кабели и контакты</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch5.1" target="content-frame">1.5.1 Обычные сетевые кабели</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch5.2" target="content-frame">1.5.2 Кабель &laquo;витая пара&raquo;</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch5.3" target="content-frame">1.5.3 Коаксиальный кабель</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch5.4" target="content-frame">1.5.4 Оптоволоконный кабель</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch5.5" target="content-frame">1.5.5 Стандарты прокладки кабелей</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch5.6" target="content-frame">1.5.6 Кабели типа UTP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch5.7" target="content-frame">1.5.7 Подключение кабеля типа UTP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/1.html#ch5.8" target="content-frame">1.5.8 Проверка кабеля</a></li></div>
+                     <li><a href="./chapters/test/1.html" target="content-frame">Тесты для самоконтроля</a></li>
+    				<li class="divider"></li>
+    			</div>
+
+               <li class="nav-header" data-toggle="collapse" data-target="#ch2">
+    				<a href="./chapters/2.html" target="content-frame">2 Стандартизация обмена данными компьютеров в сети. Модель OSI и стек TCP/IP</a>
+    			</li>
+    			<div id="ch2" class="collapse">
+    				<li><a href="./chapters/2.html#ch1" target="content-frame">2.1 Взаимодействие клиентов и серверов</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch1.2" target="content-frame">2.1.2 Протоколы, используемые при взаимодействии клиентов и серверов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch1.3" target="content-frame">2.1.3 Транспортные протоколы TCP и UDP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch1.4" target="content-frame">2.1.4 Номера портов TCP/IP</a></li></div>
+    				<li><a href="./chapters/2.html#ch2" target="content-frame">2.2 Прикладные протоколы и службы</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch2.1" target="content-frame">2.2.1 Служба доменных имен (DNS)</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch2.2" target="content-frame">2.2.2 Веб-клиенты и серверы</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch2.3" target="content-frame">2.2.3 FTP-клиенты и серверы</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch2.4" target="content-frame">2.2.4 Клиенты и серверы электронной почты</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch2.5" target="content-frame">2.2.5 Клиенты и серверы мгновенного обмена сообщениями</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch2.6" target="content-frame">2.2.6 Клиенты и серверы голосовой связи</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch2.7" target="content-frame">2.2.7 Номера портов</a></li></div>
+    				<li><a href="./chapters/2.html#ch3" target="content-frame">2.3 Многоуровневая модель и протоколы</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch3.1" target="content-frame">2.3.1 Взаимодействие протоколов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch3.2" target="content-frame">2.3.2 Взаимодействие протоколов</a></li></div>
+    				<li><a href="./chapters/2.html#ch4" target="content-frame">2.4 Модель открытых систем ISO/OSI</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch4.1" target="content-frame">2.4.1 Уровни модели OSI</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch4.2" target="content-frame">2.4.2 Протоколы модели OSI</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch4.3" target="content-frame">2.4.3 Технологии модели OSI</a></li></div>
+    				<li><a href="./chapters/2.html#ch5" target="content-frame">2.5 Поиск и устранение неисправностей с помощью модели OSI</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch5.1" target="content-frame">2.5.1 Функции уровней модели OSI при поиске неисправностей</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/2.html#ch5.2" target="content-frame">2.5.2 Методики устранения неисправностей</a></li></div>
+                    <li><a href="./chapters/2.html#ch6" target="content-frame">2.6 Сравнение модели OSI и  стека TCP/IP</a></li>
+                     <li><a href="./chapters/test/2.html" target="content-frame">Тесты для самоконтроля</a></li>
+    				<li class="divider"></li>
+    			</div>
+
+                <li class="nav-header" data-toggle="collapse" data-target="#ch3">
+    				<a href="./chapters/3.html" target="content-frame">3 Сетевое оборудование</a>
+    			</li>
+    			<div id="ch3" class="collapse">
+    				<li><a href="./chapters/3.html#ch1" target="content-frame">3.1 Иерархическая структура вычислительных сетей</a></li>
+    				<li><a href="./chapters/3.html#ch2" target="content-frame">3.2 Уровень доступа</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch2.1" target="content-frame">3.2.1 Основное назначение уровня доступа</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch2.2" target="content-frame">3.2.2 Функции концентраторов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch2.3" target="content-frame">3.2.3 Функции коммутаторов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch2.4" target="content-frame">3.2.4 Широковещательная рассылка сообщений в сети Ethernet</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch2.5" target="content-frame">3.2.5 Протокол разрешения адресов ARP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch2.6" target="content-frame">3.2.6 Прокладка кабелей для связи сетевых устройств уровня доступа</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch2.7" target="content-frame">3.2.7 Выбор устройств уровня доступа</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch2.8" target="content-frame">3.2.8 Сегментирование локальной вычислительной сети</a></li></div>
+    				<li><a href="./chapters/3.html#ch3" target="content-frame">3.3 Уровень распределения</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch3.1" target="content-frame">3.3.1 Основное назначение уровня распределения</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch3.2" target="content-frame">3.3.2 Функции маршрутизаторов</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/3.html#ch3.2.1" target="content-frame">3.3.2.1 Таблицы в памяти маршрутизаторов</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/3.html#ch3.2.2" target="content-frame">3.3.2.2 Основной шлюз</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch3.3" target="content-frame">3.3.3 Выбор сетевых устройств уровня распределения</a></li></div>
+    				<li><a href="./chapters/3.html#ch4" target="content-frame">3.4 Сетевое оборудование семейства Cisco</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch4.1" target="content-frame">3.4.1 Коммутаторы Cisco</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch4.2" target="content-frame">3.4.2 Маршрутизаторы Cisco</a></li></div>
+    				<li><a href="./chapters/3.html#ch5" target="content-frame">3.5 Центральный уровень</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch5.1" target="content-frame">3.5.1 Центр управления сетью</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/3.html#ch5.2" target="content-frame">3.5.2 Проектирование и принципы телекоммуникационной комнаты центрального уровня</a></li></div>
+                    <li><a href="./chapters/3.html#ch6" target="content-frame">3.6 Поиск неисправностей в сети </a></li>
+                    <li><a href="./chapters/test/3.html" target="content-frame">Тесты для самоконтроля</a></li>
+
+    				<li class="divider"></li>
+    			</div>
+
+                 <li class="nav-header" data-toggle="collapse" data-target="#ch4">
+    				<a href="./chapters/4.html" target="content-frame">4 Технологии локальных сетей</a>
+    			</li>
+    			<div id="ch4" class="collapse">
+    				<li><a href="./chapters/4.html#ch1" target="content-frame">4.1 Коммутация в вычислительных сетях</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch1.1" target="content-frame">4.1.1 Коммутация и сегментация</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch1.2" target="content-frame">4.1.2 Многоуровневая коммутация</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch1.3" target="content-frame">4.1.3 Типы коммутации</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch1.4" target="content-frame">4.1.4 Безопасность коммутаторов</a></li></div>
+    				<li><a href="./chapters/4.html#ch2" target="content-frame">4.2 Предотвращение петель коммутации</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch2.1" target="content-frame">4.2.1 Резервирование в коммутируемой сети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch2.2" target="content-frame">4.2.2 Протокол STP (Spanning Tree Protocol)</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch2.3" target="content-frame">4.2.3 Корневые мосты</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch2.4" target="content-frame">4.2.4 Протокол RSTP (Rapid Spanning Tree Protocol)</a></li></div>
+    				<li><a href="./chapters/4.html#ch3" target="content-frame">4.3 Виртуальные локальные сети VLAN</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch3.1" target="content-frame">4.3.1 Назначение VLAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch3.2" target="content-frame">4.3.2 Идентификация VLAN</a></li></div>
+    				<li><a href="./chapters/4.html#ch4" target="content-frame">4.4 Транкинг и маршрутизация между VLAN</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch4.1" target="content-frame">4.4.1 Магистральные порты</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch4.2" target="content-frame">4.4.2 Распределение VLAN на несколько коммутаторов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch4.3" target="content-frame">4.4.3 Маршрутизация между VLAN</a></li></div>
+                    <li><a href="./chapters/4.html#ch5" target="content-frame">4.5 Обслуживание VLAN в корпоративной сети</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch5.1" target="content-frame">4.5.1 Протокол VTP (VLAN Trunking Protocol)</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch5.2" target="content-frame">4.5.2 Поддержка VLAN для IP-телефонии и беспроводного доступа</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/4.html#ch5.3" target="content-frame">4.5.3 Рекомендуемые методы работы с VLAN</a></li></div>
+                    <li><a href="./chapters/test/4.html" target="content-frame">Тесты для самоконтроля</a></li>
+                    <li class="divider"></li>
+    			</div>
+
+                <li class="nav-header" data-toggle="collapse" data-target="#ch5">
+    				<a href="./chapters/5.html" target="content-frame">5 Сетевая адресация</a>
+    			</li>
+    			<div id="ch5" class="collapse">
+    				<li><a href="./chapters/5.html#ch1" target="content-frame">5.1 Назначение протокола IP</a></li>
+    				<li><a href="./chapters/5.html#ch2" target="content-frame">5.2 Структура IP-адреса</a></li>
+    				<li><a href="./chapters/5.html#ch3" target="content-frame">5.3 Взаимодействие IP-адресов и масок подсети</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch3.1" target="content-frame">5.3.1 Назначение масок подсети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch3.2" target="content-frame">5.3.2 Классы IP-адресов и маски подсети по умолчанию</a></li></div>
+    				<li><a href="./chapters/5.html#ch4" target="content-frame">5.4 Публичные и частные IP-адреса </a></li>
+    				<li><a href="./chapters/5.html#ch5" target="content-frame">5.5 Адреса одноадресных, широковещательных и многоадресных рассылок</a></li>
+    				<li><a href="./chapters/5.html#ch6" target="content-frame">5.6 Присвоение статических и динамических адресов</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch6.1" target="content-frame">5.6.1 Серверы DHCP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch6.2" target="content-frame">5.6.2 Настройка DHCP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch6.3" target="content-frame">5.6.3 Границы сети и пространство адресов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch6.4" target="content-frame">5.6.4 Присвоение динамического адреса DHCP</a></li></div>
+                    <li><a href="./chapters/5.html#ch7" target="content-frame">5.7 Преобразование сетевых адресов</a></li>
+                    <li><a href="./chapters/5.html#ch8" target="content-frame">5.8 IP-адресация в LAN</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch8.1" target="content-frame">5.8.1 Обзор IP-адресов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch8.2" target="content-frame">5.8.2 Разбиение сети на подсети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch8.3" target="content-frame">5.8.3 Пользовательские маски подсети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch8.4" target="content-frame">5.8.4 Маски VLSM и бесклассовая междоменная маршрутизация (CIDR)</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch8.5" target="content-frame">5.8.5 Обмен данными между подсетями</a></li></div>
+                    <li><a href="./chapters/5.html#ch9" target="content-frame">5.9 Основное преобразование IP-адресов (NAT)</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch9.1" target="content-frame">5.9.1 Принцип механизма NAT</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch9.2" target="content-frame">5.9.2 Термины IP NAT</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch9.3" target="content-frame">5.9.3 Статическое и динамическое преобразование NAT</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch9.4" target="content-frame">5.9.4 Преобразование сетевых адресов на основе портов (PAT)</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch9.5" target="content-frame">5.9.5 Проблемы IP NAT</a></li></div>
+                    <li><a href="./chapters/5.html#ch10" target="content-frame">5.10 Маски подсетей</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch10.1" target="content-frame">5.10.1 Представление масок</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch10.2" target="content-frame">5.10.2 Расчет подсетей с использованием двоичного представления</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch10.3" target="content-frame">5.10.3 Процесс базового разбиения на подсети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch10.4" target="content-frame">5.10.4 Маски подсети переменной длины (VLSM)</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch10.5" target="content-frame">5.10.5 Внедрение адресации VLSM</a></li></div>
+                    <li><a href="./chapters/5.html#ch11" target="content-frame">5.11 Классовая и бесклассовая маршрутизация</a></li>
+                    <li><a href="./chapters/5.html#ch12" target="content-frame">5.12 CIDR и суммирование маршрутов</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch12.1" target="content-frame">5.12.1 Понятие агрегирования маршрутов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch12.2" target="content-frame">5.12.2 Расчет объединения маршрутов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch12.3" target="content-frame">5.12.3 Несмежные сети</a></li></div>
+                    <li><a href="./chapters/5.html#ch13" target="content-frame">5.13 Протокол IP шестой версии  (IPv6)</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch13.1" target="content-frame">5.13.1 Возможности протокола IPv6</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch13.2" target="content-frame">5.13.2 Сравнение адресации по протоколам IPv4 и IPv6</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/5.html#ch13.3" target="content-frame">5.13.3 Переход от протокола IPv4 к IPv6</a></li></div>
+                    <li><a href="./chapters/test/5.html" target="content-frame">Тесты для самоконтроля</a></li>
+                    <li class="divider"></li>
+    			</div>
+
+				<li class="nav-header" data-toggle="collapse" data-target="#ch6">
+    				<a href="./chapters/6.html" target="content-frame">6 Введение в маршрутизацию</a>
+    			</li>
+				<div id="ch6" class="collapse">
+					<li><a href="./chapters/6.html#ch1" target="content-frame">6.1 Применение протоколов маршрутизации</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch1.1" target="content-frame">6.1.1 Основы маршрутизации</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch1.2" target="content-frame">6.1.2 Протоколы маршрутизации </a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch1.3" target="content-frame">6.1.3 Общие протоколы внутренней маршрутизации</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch1.3.1" target="content-frame">6.1.3.1 Протокол RIP</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch1.3.2" target="content-frame">6.1.3.2 Протокол EIGRP </a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch1.3.3" target="content-frame">6.1.3.3 Протоколы на основе состояния канала</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch1.3.4" target="content-frame">6.1.3.4 OSPF</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch1.1" target="content-frame">6.1.4 Маршрутизация в организационных подразделениях</a></li></div>
+					<li><a href="./chapters/6.html#ch2" target="content-frame">6.2 Протоколы внешней маршрутизации</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch2.1" target="content-frame">6.2.1 Автономные системы</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch2.2" target="content-frame">6.2.2 Маршрутизация через Интернет</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch2.3" target="content-frame">6.2.3 Протоколы внешней маршрутизации и поставщики услуг Интернета</a></li></div>
+					<li><a href="./chapters/6.html#ch3" target="content-frame">6.3 Маршрутизация с помощью протоколов на основе векторов расстояния</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch3.1" target="content-frame">6.3.1 Протокол RIP</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch3.1.1" target="content-frame">6.3.1.1 Функции протокола RIP</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch3.1.2" target="content-frame">6.3.1.2 Проблемы с протоколом RIP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch3.2" target="content-frame">6.3.2 Усовершенствованный протокол внутренней маршрутизации между шлюзами (EIGRP)</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch3.2.1" target="content-frame">6.3.2.1 Функции протокола EIGRP</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch3.2.2" target="content-frame">6.3.2.2 Терминология и таблицы протокола EIGRP</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch3.2.3" target="content-frame">6.3.2.3 Соседи и смежности EIGRP</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch3.2.4" target="content-frame">6.3.2.4 Метрики и конвергенции протокола EIGRP</a></li></div>
+						<div style="margin-left:40px"><li><a href="./chapters/6.html#ch3.2.5" target="content-frame">6.3.2.5 Проблемы и ограничения протокола EIGRP</a></li></div>
+					<li><a href="./chapters/6.html#ch4" target="content-frame">6.4 Маршрутизация с помощью протоколов на основе состояния канала</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch4.1" target="content-frame">6.4.1 Протокол OSPF</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch4.2" target="content-frame">6.4.2 Метрики и конвергенция протоколов OSPF</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch4.3" target="content-frame">6.4.3 Соседние маршрутизаторы OSPF и отношения смежности</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch4.4" target="content-frame">6.4.4 Области OSPF</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/6.html#ch4.5" target="content-frame">6.4.5 Проблемы и ограничения OSPF</a></li></div>
+					<li><a href="./chapters/6.html#ch5" target="content-frame">6.5 Использование нескольких протоколов маршрутизации на предприятии</a></li>
+                    <li><a href="./chapters/test/6.html" target="content-frame">Тесты для самоконтроля</a></li>
+                    <li class="divider"></li>
+    			</div>
+
+                <li class="nav-header" data-toggle="collapse" data-target="#ch7">
+    				<a href="./chapters/7.html" target="content-frame">7 Протоколы стека TCP/IP, используемые для работы служб поставщиков услуг Интернета</a>
+    			</li>
+    			<div id="ch7" class="collapse">
+    				<li><a href="./chapters/7.html#ch1" target="content-frame">7.1 Обзор протоколов TCP/IP</a></li>
+    				<li><a href="./chapters/7.html#ch2" target="content-frame">7.2 Протоколы транспортного уровня</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch2.1" target="content-frame">7.2.1 Функции транспортного уровня</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch2.2" target="content-frame">7.2.2 Протокол TCP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch2.3" target="content-frame">7.2.3 Протокол UDP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch2.4" target="content-frame">7.2.4 Поддержка нескольких сетевых служб</a></li></div>
+    				<li><a href="./chapters/7.html#ch3" target="content-frame">7.3 Служба доменных имен</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch3.1" target="content-frame">7.3.1 Имя узла TCP/IP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch3.2" target="content-frame">7.3.2 Иерархия DNS</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch3.3" target="content-frame">7.3.3 Преобразование имен в DNS</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch3.4" target="content-frame">7.3.4 Реализация DNS-решений</a></li></div>
+    				<li><a href="./chapters/7.html#ch4" target="content-frame">7.4 Службы и протоколы</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch4.1" target="content-frame">7.4.1 Сервисы</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch4.2" target="content-frame">7.4.2 Протоколы HTTP и HTTPS</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch4.3" target="content-frame">7.4.3 Протокол FTP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/7.html#ch4.4" target="content-frame">7.4.4 SMTP, POP3, и IMAP4</a></li></div>
+                   <li><a href="./chapters/test/7.html" target="content-frame">Тесты для самоконтроля</a></li>
+                    <li class="divider"></li>
+    			</div>
+
+                <li class="nav-header" data-toggle="collapse" data-target="#ch8">
+    				<a href="./chapters/8.html" target="content-frame">8 Технологии глобальных сетей</a>
+    			</li>
+    			<div id="ch8" class="collapse">
+    				<li><a href="./chapters/8.html#ch1" target="content-frame">8.1 Основы сети Интернет</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch1.1" target="content-frame">8.1.1 Поставщики услуг Интернета</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch1.2" target="content-frame">8.1.2 Варианты подключения к поставщику услуг Интернета</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch1.3" target="content-frame">8.1.3 Уровни обслуживания поставщика услуг Интернета</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch1.4" target="content-frame">8.1.4 Обработка пакетов оборудованием поставщика услуг</a></li></div>
+    				<li><a href="./chapters/8.html#ch2" target="content-frame">8.2 Интернет как облако</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch2.1" target="content-frame">8.2.1 Устройства в Интернет-облаке</a></li></div>
+    				<li><a href="./chapters/8.html#ch3" target="content-frame">8.3 Услуги сети Интернет</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch3.1" target="content-frame">8.3.1 Интернет и стандарты</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch3.2" target="content-frame">8.3.2 Службы поставщиков услуг Интернета</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch3.3" target="content-frame">8.3.3 Предоставление конечным пользователям услуг Интернета</a></li></div>
+    				<li><a href="./chapters/8.html#ch4" target="content-frame">8.4 Иерархия сети Интернет</a></li>
+                    <li><a href="./chapters/8.html#ch5" target="content-frame">8.5 Подключение сетей к внешним услугам</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch5.1" target="content-frame">8.5.1 Выбор устройства для предоставления услуг Интернета</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch5.2" target="content-frame">8.5.2 Предоставление услуг у точки присутствия</a></li></div>
+                    <li><a href="./chapters/8.html#ch6" target="content-frame">8.6 Связь клиентов через WAN</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch6.1" target="content-frame">8.6.1 Выбор соединения с WAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch6.2" target="content-frame">8.6.2 Настройка соединения с WAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch6.3" target="content-frame">8.6.3 Требования клиентов</a></li></div>
+                    <li><a href="./chapters/8.html#ch7" target="content-frame">8.7 Создание каналов корпоративной сети</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch7.1" target="content-frame">8.7.1 Потоки трафика в корпоративной сети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch7.2" target="content-frame">8.7.2 Устройства сети WAN и технологии</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch7.3" target="content-frame">8.7.3 Стандарты сети WAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch7.4" target="content-frame">8.7.4 Цифровые и аналоговые технологии сети WAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch7.5" target="content-frame">8.7.5 Коммутация каналов и пакетов</a></li></div>
+                    <li><a href="./chapters/8.html#ch8" target="content-frame">8.8 Технологии WAN “последняя миля” и “длинная дистанция”</a></li>
+                    <li><a href="./chapters/8.html#ch9" target="content-frame">8.9 Инкапсуляция WAN</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch9.1" target="content-frame">8.9.1 HDLC и PPP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch9.2" target="content-frame">8.9.2 Аутентификация РРР</a></li></div>
+                    <li><a href="./chapters/8.html#ch10" target="content-frame">8.10 Протокол Frame Relay</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch10.1" target="content-frame">8.10.1 Обзор протокола Frame Relay</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/8.html#ch10.2" target="content-frame">8.10.2 Функциональные возможности Frame Relay</a></li></div>
+                   <li><a href="./chapters/test/8.html" target="content-frame">Тесты для самоконтроля</a></li>
+                    <li class="divider"></li>
+    			</div>
+
+				<li class="nav-header" data-toggle="collapse" data-target="#ch9">
+    				<a href="./chapters/9.html" target="content-frame">9 Беспроводные технологии </a>
+    			</li>
+    			<div id="ch9" class="collapse">
+    				<li><a href="./chapters/9.html#ch1" target="content-frame">9.1 Основы беспроводных технологий</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch1.1" target="content-frame">9.1.1 Беспроводные технологии и устройства</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch1.2" target="content-frame">9.1.2 Преимущества и ограничения беспроводной технологии</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch1.3" target="content-frame">9.1.3 Типы беспроводных сетей и их границы</a></li></div>
+    				<li><a href="./chapters/9.html#ch2" target="content-frame">9.2 Беспроводные локальные сети</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch2.1" target="content-frame">9.2.1 Стандарты беспроводных локальных сетей</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch2.2" target="content-frame">9.2.2 Компоненты беспроводной локальной сети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch2.3" target="content-frame">9.2.3 Сети WLAN и идентификаторы SSID</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch2.4" target="content-frame">9.2.4 Беспроводные каналы</a></li></div>
+    				<li><a href="./chapters/9.html#ch3" target="content-frame">9.3 Настройка беспроводных локальных сетей</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch3.1" target="content-frame">9.3.1 Настройка точки доступа</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch3.2" target="content-frame">9.3.2 Настройка беспроводного клиента</a></li></div>
+    				<li><a href="./chapters/9.html#ch4" target="content-frame">9.4 Обеспечение безопасности беспроводной локальной сети</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch4.1" target="content-frame">9.4.1 Почему атакуют беспроводные локальные сети</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch4.2" target="content-frame">9.4.2 Ограничение доступа с сети WLAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch4.3" target="content-frame">9.4.3 Аутентификация в сети WLAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch4.4" target="content-frame">9.4.4 Шифрование в сети WLAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch4.5" target="content-frame">9.4.5 Фильтрация трафика в сети WLAN</a></li></div>
+                    <li><a href="./chapters/9.html#ch5" target="content-frame">9.5 Настройка интегрированной точки доступа и беспроводного клиента</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch5.1" target="content-frame">9.5.1 Планирование сети WLAN</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch5.2" target="content-frame">9.5.2 Установка и обеспечение безопасности точки доступа</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch5.3" target="content-frame">9.5.3 Резервное копирование и восстановление файлов конфигурации</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch5.4" target="content-frame">9.5.4 Обновление микропрограммы</a></li></div>
+					<li><a href="./chapters/8.html#ch6" target="content-frame">9.6 Поиск и устранение неполадок беспроводных подключенийa></li>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch6.1" target="content-frame">9.6.1 Беспроводной узел не может подключиться к точке доступа</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch6.2" target="content-frame">9.6.2 Проблемы с настройкой беспроводных сетей</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/9.html#ch6.3" target="content-frame">9.6.3 Вопросы, связанные с DHCP</a></li></div>
+                     <li><a href="./chapters/test/9.html" target="content-frame">Тесты для самоконтроля</a></li>
+                    <li class="divider"></li>
+    			</div>
+
+                	<li class="nav-header" data-toggle="collapse" data-target="#ch10">
+    				<a href="./chapters/10.html" target="content-frame">10 Основы сетевой безопасности</a>
+    			</li>
+    			<div id="ch10" class="collapse">
+    				<li><a href="./chapters/10.html#ch1" target="content-frame">10.1 Сетевые угрозы</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch1.1" target="content-frame">10.1.1 Риски вторжения в сеть</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch1.2" target="content-frame">10.1.2 Источники вторжения в сеть</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch1.3" target="content-frame">10.1.3 Социотехника и фишинг</a></li></div>
+    				<li><a href="./chapters/10.html#ch2" target="content-frame">10.2 Методы атак</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch2.1" target="content-frame">10.2.1 Вирусы, черви и “троянские кони”</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch2.2" target="content-frame">10.2.2 Отказ в обслуживании и атаки методом грубой силы</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch2.3" target="content-frame">10.2.3 Шпионское ПО, отслеживание файлов cookie, рекламное ПО и всплывающие окна</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch2.4" target="content-frame">10.2.4 Спам</a></li></div>
+    				<li><a href="./chapters/10.html#ch3" target="content-frame">10.3 Политика безопасности</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch3.1" target="content-frame">10.3.1 Общие меры обеспечения безопасности</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch3.2" target="content-frame">10.3.2 Исправления и обновления</a></li></div>
+                        <div style="margin-left:20px"><li><a href="./chapters/10.html#ch3.3" target="content-frame">10.3.3 Антиспам</a></li></div>
+                        <div style="margin-left:20px"><li><a href="./chapters/10.html#ch3.4" target="content-frame">10.3.4 Программа защиты от шпионского ПО</a></li></div>
+    				<li><a href="./chapters/10.html#ch4" target="content-frame">10.4 Использование межсетевых экранов</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch4.1" target="content-frame">10.4.1 Что такое межсетевой экран</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch4.2" target="content-frame">10.4.2 Варианты использование межсетевых экранов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch4.3" target="content-frame">10.4.3 Анализ уязвимостей</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch4.4" target="content-frame">10.4.4 Практические рекомендации</a></li></div>
+                    <li><a href="./chapters/10.html#ch5" target="content-frame">10.5 Вопросы безопасности, актуальные для ISP</a></li>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch5.1" target="content-frame">10.5.1 Службы безопасности ISP</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch5.2" target="content-frame">10.5.2 Практические рекомендации по укреплению безопасности</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch5.3" target="content-frame">10.5.3 Шифрование данных</a></li></div>
+					<li><a href="./chapters/10.html#ch6" target="content-frame">10.6 Инструментальные средства обеспечения безопасности</li>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch6.1" target="content-frame">10.6.1 Списки контроля доступа и фильтрация по портам</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch6.2" target="content-frame">10.6.2 Применение межсетевых экранов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch6.3" target="content-frame">10.6.3 Системы IDS и IPS</a></li></div>
+                        <div style="margin-left:20px"><li><a href="./chapters/10.html#ch6.3" target="content-frame">10.6.4 Безопасность беспроводных сетей</a></li></div>
+                        <div style="margin-left:20px"><li><a href="./chapters/10.html#ch6.3" target="content-frame">10.6.5 Безопасность узлов</a></li></div>
+                    <li><a href="./chapters/10.html#ch7" target="content-frame">10.7 Контроль ISP и взаимоотношения с ним</li>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch7.1" target="content-frame">10.7.1 Контроль рабочих параметров сетевых каналов</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch7.2" target="content-frame">10.7.2 Управление оборудованием с помощью внутриполосных средств</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch7.3" target="content-frame">10.7.3  Использование протоколов SNMP и Syslog</a></li></div>
+                    <li><a href="./chapters/10.html#ch8" target="content-frame">10.8 Защита WAN и удаленных сотрудников</li>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch8.1" target="content-frame">10.8.1 Интеграция удаленных сотрудников в архитектуру сети c средствами виртуальных частных сетей (VPN)</a></li></div>
+						<div style="margin-left:20px"><li><a href="./chapters/10.html#ch8.2" target="content-frame">10.8.2 Компоненты виртуальных частных сетей (VPN)</a></li></div>
+				        <div style="margin-left:40px"><li><a href="./chapters/10.html#ch8.2.1" target="content-frame">10.8.2.1 Виртуальная сеть</a></li></div>
+				        <div style="margin-left:40px"><li><a href="./chapters/10.html#ch8.2.2" target="content-frame">10.8.2.2 Алгоритмы шифрования</a></li></div>
+				        <div style="margin-left:40px"><li><a href="./chapters/10.html#ch8.2.3" target="content-frame">10.8.2.3 Алгоритмы целостности данных</a></li></div>
+				        <div style="margin-left:40px"><li><a href="./chapters/10.html#ch8.2.4" target="content-frame">10.8.2.4 Технология IPSec</a></li></div>
+                   <li><a href="./chapters/test/10.html" target="content-frame">Тесты для самоконтроля</a></li>
+                  <li class="divider"></li>
+    			</div>
+                           <li class="nav-header"><a href="./chapters/zakluchenie.html" target="content-frame">Заключение</a></li>
+                           						<li class="nav-header"><a href="./chapters/bookhead.html" target="content-frame">Список основной литературы</a></li>
+						<li class="nav-header" ><a href="./chapters/bookdop.html" target="content-frame">Список дополнительной литературы</a></li>
+                        <li class="nav-header" ><a href="./chapters/test/itog.html" target="content-frame">Итоговый тест</a></li>
+
+
+
+        </ul>
+      </div><!--/.well -->
+
+   </div>
+    <a href="#" id="toggle">Показать оглавление</a>
+
+</div>
+
+    <iframe id="content" name="content-frame" height="94%" frameborder="no" width="93.5%" scrolling="auto"  framespacing="0" marginwidth="10" marginheight="0" src="./chapters/1.html"></iframe>
+
+          <div id="toppanel_right">
+    <div id="slidepanel_right">
+    <!-- Содержимое панели -->
+
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+
+
+
+
+                        <li class="nav-header"><a href="./chapters/annotation.html" target="content-frame">Аннотация</a></li>
+						<li class="nav-header"><a href="./chapters/author.html" target="content-frame">Авторский коллектив</a></li>
+
+    			        <li class="nav-header"><a href="./chapters/glossarii.html" target="content-frame">Глоссарий</a></li>
+
+
+    			        <li class="nav-header"><a href="index.html">На главную</a></li>
+
+        </ul>
+      </div><!--/.well -->
+
+   </div>
+  <a href="#" id="toggle_right">Дополнительно</a>
+<div style="text-align: left; width: 600px; position: fixed; bottom: 0; margin-left: -40%;
+color: #000;
+font-size: 0.9em; ">ЭГУП "Сети и телекоммуникации", © Насейкина Л.Ф.,Деревянкина Н.В. </div>
+</div>
+
+ </body>
+</html>

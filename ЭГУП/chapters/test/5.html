@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+    <HEAD>
+          <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+          <META NAME="Generator" CONTENT="Macro HTML 1.40 beta">
+          <TITLE>Тесты для самоконтроля</TITLE>
+          <style type="text/css">
+          <!--
+          A  {text-decoration:none; color: #406A95}
+          A:Visited  {text-decoration:none;}
+          A:Active  {text-decoration:none;}
+          A:Hover  {text-decoration:underline; color:#ff4400;}
+
+          P {text-indent:25; text-align:justify;}
+          -->
+          </style>
+
+
+
+    </HEAD>
+<BODY BACKGROUND="back_3.jpg" bottommargin="0" leftmargin="6" topmargin="0">
+
+    <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+
+
+			<TD width=850>	 <a name="3"></a>
+<div align="center">
+
+		</div>
+ 			<HR>
+
+
+
+
+
+<body>
+<Font size=4>
+<body bgcolor="#F3F3F3"  text="black" lang=RU link="blue"
+vlink="purple" style='tab-interval:35.4pt'>
+
+
+<Div align=justify><h1>Тесты для самоконтроля </h1>
+
+<Script Language="JavaScript">
+<!--Начало сценария
+
+var res="2323523111"
+
+function test1()
+{
+
+	var count=0
+	with(document.test)
+	{
+		if(!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked&&!Q1[4].checked){count+=1};
+		if(!Q2[0].checked&&!Q2[1].checked&&!Q2[2].checked&&!Q2[3].checked&&!Q2[4].checked){count+=1};
+		if(!Q3[0].checked&&!Q3[1].checked&&!Q3[2].checked&&!Q3[3].checked&&!Q3[4].checked){count+=1};
+		if(!Q4[0].checked&&!Q4[1].checked&&!Q4[2].checked&&!Q4[3].checked&&!Q4[4].checked){count+=1};
+		if(!Q5[0].checked&&!Q5[1].checked&&!Q5[2].checked&&!Q5[3].checked&&!Q5[4].checked){count+=1};
+                if(!Q6[0].checked&&!Q6[1].checked&&!Q6[2].checked&&!Q6[3].checked&&!Q6[4].checked){count+=1};
+                if(!Q7[0].checked&&!Q7[1].checked&&!Q7[2].checked&&!Q7[3].checked&&!Q7[4].checked){count+=1};
+                if(!Q8[0].checked&&!Q8[1].checked&&!Q8[2].checked&&!Q8[3].checked&&!Q8[4].checked){count+=1};
+                if(!Q9[0].checked&&!Q9[1].checked&&!Q9[2].checked&&!Q9[3].checked&&!Q9[4].checked){count+=1};
+                if(!Q10[0].checked&&!Q10[1].checked&&!Q10[2].checked&&!Q10[3].checked&&!Q10[4].checked){count+=1};
+
+		if (count>0) {alert("Не торопитесь. Вы ответили не на все вопросы!")}
+		else answer()
+	}
+}
+
+function control(k,f1,f2,f3,f4,f5)
+{
+	if (k==1&&f1.checked)return true;
+	if (k==2&&f2.checked)return true;
+	if (k==3&&f3.checked)return true;
+	if (k==4&&f4.checked)return true;
+	if (k==5&&f5.checked)return true;
+	return false;
+}
+
+function answer()
+	{
+	answ="";
+	with(document)
+	{
+		answ+=control(res.charAt(0),test.Q1[0],test.Q1[1],test.Q1[2],test.Q1[3],test.Q1[4])?"1":"0";
+		answ+=control(res.charAt(1),test.Q2[0],test.Q2[1],test.Q2[2],test.Q2[3],test.Q2[4])?"1":"0";
+		answ+=control(res.charAt(2),test.Q3[0],test.Q3[1],test.Q3[2],test.Q3[3],test.Q3[4])?"1":"0";
+		answ+=control(res.charAt(3),test.Q4[0],test.Q4[1],test.Q4[2],test.Q4[3],test.Q4[4])?"1":"0";
+		answ+=control(res.charAt(4),test.Q5[0],test.Q5[1],test.Q5[2],test.Q5[3],test.Q5[4])?"1":"0";
+                answ+=control(res.charAt(5),test.Q6[0],test.Q6[1],test.Q6[2],test.Q6[3],test.Q6[4])?"1":"0";
+                answ+=control(res.charAt(6),test.Q7[0],test.Q7[1],test.Q7[2],test.Q7[3],test.Q7[4])?"1":"0";
+                answ+=control(res.charAt(7),test.Q8[0],test.Q8[1],test.Q8[2],test.Q8[3],test.Q8[4])?"1":"0";
+                answ+=control(res.charAt(8),test.Q9[0],test.Q9[1],test.Q9[2],test.Q9[3],test.Q9[4])?"1":"0";
+                answ+=control(res.charAt(9),test.Q10[0],test.Q10[1],test.Q10[2],test.Q10[3],test.Q10[4])?"1":"0";
+
+
+	showResult();
+	}
+}
+
+function showResult(){
+	var nok=0;
+	var i,s;
+	for (i=0;i<answ.length;i++)
+	{
+		nok+=answ.charAt(i)=="1"?1:0;
+	}
+	if(nok<=5) s='"НЕУДОВЛЕТВОРИТЕЛЬНО"';
+	if(nok>5 && nok<7) s='"УДОВЛЕТВОРИТЕЛЬНО"';
+	if(nok==7) s='"УДОВЛЕТВОРИТЕЛЬНО"';
+	if(nok>7 && nok<8) s='"ХОРОШО"';
+	if(nok==8) s='"ХОРОШО"';
+	if(nok>9) s='"ОТЛИЧНО"';
+	document.test.s1.value="Количество правильных ответов "+nok+
+		". Ваша оценка "+s+". Загляните в окно рядом с номером вопроса. Если"+
+		" Вы ответили правильно, то там (+), если Вы ошиблись, то там (-).";
+	with(document.test)
+	{
+		if(answ.charAt(0)=="1"){T1.value=" +"}
+			else {T1.value=" -"};
+		if(answ.charAt(1)=="1"){T2.value=" +"}
+			else {T2.value=" -"};
+		if(answ.charAt(2)=="1"){T3.value=" +"}
+			else {T3.value=" -"};
+		if(answ.charAt(3)=="1"){T4.value=" +"}
+			else {T4.value=" -"};
+		if(answ.charAt(4)=="1"){T5.value=" +"}
+			else {T5.value=" -"};
+		if(answ.charAt(5)=="1"){T6.value=" +"}
+			else {T6.value=" -"};
+		if(answ.charAt(6)=="1"){T7.value=" +"}
+			else {T7.value=" -"};
+		if(answ.charAt(7)=="1"){T8.value=" +"}
+			else {T8.value=" -"};
+		if(answ.charAt(8)=="1"){T9.value=" +"}
+			else {T9.value=" -"};
+		if(answ.charAt(9)=="1"){T10.value=" +"}
+			else {T10.value=" -"};
+
+}
+}
+
+//--Конец сценария-->
+</script>
+
+</head>
+<body bgcolor="white">
+<form name=test>
+
+
+<ol>
+	<li>
+	<h4> <input type=text name=T1 size=1 value=''>Выберите IP-адрес, соответствующий интерфейсу обратной связи (“петля”):</h4>
+	<input type=radio name=Q1> 192.168.1.123;<br>
+	<input type=radio name=Q1> 127.0.0.1;<br>
+	<input type=radio name=Q1> 13.45.12.1;<br>
+	<input type=radio name=Q1> 1.1.1.1;<br>
+	<input type=radio name=Q1> 0.0.0.0.<br>
+
+<br>
+
+	<li>
+	<h4> <input type=text name=T2 size=1 value=''>По Вашему мнению, IP-адрес версии протокола IPv4, начинающийся с бит значений “110” и не имеющий маски, относится к сети, которая содержит:</h4>
+	<input type=radio name=Q2> До 8 узлов; <br>
+	<input type=radio name=Q2> До 64  узлов;<br>
+	<input type=radio name=Q2> До 256 узлов; 	<br>
+	<input type=radio name=Q2> До 16 777 216; 	<br>
+	<input type=radio name=Q2> До 65 535 узлов.<br>
+<br>
+
+	<li>
+	<h4> <input type=text name=T3 size=1 value=''>Номера IP-адресов сетей какого класса задаются в диапазоне 128.0.0.0  - 191.255.0.0 в классовой адресации протокола IPv4?</h4>
+	<input type=radio name=Q3> Класса А;<br>
+	<input type=radio name=Q3> Класса B;<br>
+	<input type=radio name=Q3> Класса С;<br>
+	<input type=radio name=Q3> Класса D;<br>
+	<input type=radio name=Q3> Класса E.<br>
+<br>
+
+	<li>
+	<h4> <input type=text name=T4 size=1 value=''> Что можно сказать об IP-адресе 192.168.1.0?</h4>
+	<input type=radio name=Q4> Адрес, часто выделяемый компьютерам в локальных сетях;<br>
+	<input type=radio name=Q4> Этот адрес часто назначают одному из сетевых интерфейсов маршрутизатора;<br>
+	<input type=radio name=Q4> Адрес обозначает конкретную сеть класса С;<br>
+	<input type=radio name=Q4> Адрес групповой рассылки multicast;<br>
+	<input type=radio name=Q4> IP-адрес класса С.<br>
+	<br>
+
+	<li>
+	<h4> <input type=text name=T5 size=1 value=''> Укажите длину IP-адреса по версии IPv6:</h4>
+	<input type=radio name=Q5> 16 байт;<br>
+	<input type=radio name=Q5> 10 байт;<br>
+	<input type=radio name=Q5> 8 байт;<br>
+        <input type=radio name=Q5> 4 байта;<br>
+	<input type=radio name=Q5> 6 байт.<br>
+	<br>
+<li>
+	<h4> <input type=text name=T6 size=1 value=''> Укажите маску подсети по умолчанию для IP-адреса 128.107.23.10.</h4>
+	<input type=radio name=Q6> 255.0.0.0;<br>
+	<input type=radio name=Q6> 255.255.0.0;<br>
+	<input type=radio name=Q6> 255.255.255.0;<br>
+	<input type=radio name=Q6> 255.255.255.255;<br>
+	<input type=radio name=Q6> 255.255.224.0.<br>
+	<br>
+<li>
+	<h4> <input type=text name=T7 size=1 value=''>Какой диапазон адресов является локальными адресами канала?</h4>
+	<input type=radio name=Q7> 127.0.0.0/16;<br>
+	<input type=radio name=Q7> 192.168.1.0/24;<br>
+	<input type=radio name=Q7> 169.254.0.0/16;<br>
+	<input type=radio name=Q7> 10.0.0.0/8;<br>
+	<input type=radio name=Q7> 172.16.0.0/16.<br>
+	<br>
+
+<li>
+	<h4> <input type=text name=T8 size=1 value=''> Какой адрес является действительным адресом подсети, если 172.25.15.0/24 разделяется на подсети путем заимствования дополнительных четырех битов?</h4>
+	<input type=radio name=Q8> 172.25.15.0;<br>
+        <input type=radio name=Q8> 172.25.15.8;<br>
+	<input type=radio name=Q8> 172.25.15.17;<br>
+	<input type=radio name=Q8> 172.25.15.40;<br>
+	<input type=radio name=Q8> 172.25.15.97.<br>
+	<br>
+
+<li>
+	<h4> <input type=text name=T9 size=1 value=''> Каково преимущество NAT?</h4>
+	<input type=radio name=Q9> Экономит зарегистрированные общие IP-адреса;<br>
+	<input type=radio name=Q9> Снижает использование ЦП на клиентских маршрутизаторах;<br>
+	<input type=radio name=Q9> Создает множество общих IP-адресов;<br>
+        <input type=radio name=Q9> Делает частную адресацию ЛВС доступной для Интернет;<br>
+	<input type=radio name=Q9> Не позволяет расширять ЛВС без дополнительных общих IP-адресов.<br>
+	<br>
+<li>
+	<h4> <input type=text name=T10 size=1 value=''> Когда администратор сети применяет маску подсети 255.255.255.248 к адресу класса В, для любой заданной подсети, сколько IP-адресов могут быть присвоены устройствам?</h4>
+	<input type=radio name=Q10> 6;<br>
+	<input type=radio name=Q10> 30;<br>
+	<input type=radio name=Q10> 126;<br>
+	<input type=radio name=Q10> 254;<br>
+	<input type=radio name=Q10> 510.<br>
+	<br>
+
+
+
+
+
+
+</ol>
+
+<center>
+<input type=button value="Показать результат" onClick=test1()>
+<p>
+<textarea rows=5 cols=70 name=s1></textarea>
+</p>
+<input type=reset value="Очистить выбранные пункты">
+
+</form>
+<br>
+
+</div>
+
+<HR>
+<BR><Div align=center>
+	 <a href="#3">В начало страницы</a>
+    </div><br>
+</font>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,64 @@
+﻿p
+{
+	text-indent:35px;
+	text-align:justify;
+}
+
+p.title
+{
+	font-weight:bold;
+	text-align:center;
+}
+p.img
+{
+	text-align:center;
+}
+p.main-title
+{
+	font-weight:bold;
+	text-align:center;
+	font-size:18px;
+}
+
+ul 
+{
+	list-style:none;
+	text-align:justify;
+}
+
+ul li:before 
+{
+	content:"-";
+	position:relative;
+	left:-5px;
+}
+ol 
+{
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset:  item; /* Обнуляем счетчик списка */
+}
+
+ol li:before 
+{
+    content: counter(item) ') '; /* Добавляем к числам скобку */
+    counter-increment: item; /* Задаём имя счетчика */
+}
+
+.animation 
+{
+}
+
+.animation iframe 
+{
+	width:100%; 
+	overflow:hidden; 
+	border: 10px; 
+	height:90%;
+}
+
+img 
+{
+	margin-bottom: 0px;
+}
+
+.test ul li:before {content:none;}

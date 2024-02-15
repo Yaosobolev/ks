@@ -1,0 +1,317 @@
+ <html>
+<!-- Creation date: 03.10.2005 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Гипертекстовый учебник по курсу "Сети ЭВМ и телекоммуникации"</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="ПОВТАС">
+<meta name="generator" content="CuteHTML Pro">
+<script type="text/javascript">
+
+
+
+var persistmenu="yes";
+var persisttype="sitewide"; 
+
+if (document.getElementById)
+{ document.write('<style type="text/css">\n');
+document.write('.submenu{display: none;}\n');
+document.write('</style>\n');}
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); 
+		if(el.style.display != "block"){ 
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu") 
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+function get_cookie(Name) { 
+var search = Name + "=";
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search);
+if (offset != -1) { 
+offset += search.length;
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end));
+}
+}
+return returnvalue;
+}
+
+function onloadfunction(){
+if (persistmenu=="yes"){
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname;
+var cookievalue=get_cookie(cookiename);
+if (cookievalue!="")
+document.getElementById(cookievalue).style.display="block";
+}
+}
+
+function savemenustate(){
+var inc=1, blockid="";
+while (document.getElementById("sub"+inc)){
+if (document.getElementById("sub"+inc).style.display=="block"){
+blockid="sub"+inc;
+break;
+}
+inc++;
+}
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname;
+var cookievalue=(persisttype=="sitewide")? blockid+";path=/" : blockid
+document.cookie=cookiename+"="+cookievalue
+}
+
+if (window.addEventListener)
+window.addEventListener("load", onloadfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", onloadfunction)
+else if (document.getElementById)
+window.onload=onloadfunction
+
+if (persistmenu=="yes" && document.getElementById)
+window.onunload=savemenustate
+
+</script>
+<!--  -->
+
+
+<!-- Начало титул -->
+<script language="JavaScript1.2">
+
+if (document.all||document.getElementById){
+var thetitle=document.title
+document.title=''
+}
+
+
+
+var data="0123456789";
+
+var done=1;
+function statusIn(text){
+	decrypt(text,2,1);
+}
+
+function statusOut(){
+self.status='';
+done=1;
+}
+
+
+
+function decrypt(text, max, delay){
+	if (done){
+		done = 0;
+		decrypt_helper(text, max, delay,  0, max);
+		}
+	
+}
+
+function decrypt_helper(text, runs_left, delay, charvar, max){
+	if (!done){
+	runs_left = runs_left - 1;
+	var status = text.substring(0,charvar);
+	for(var current_char = charvar; current_char < text.length; current_char++){
+		status += data.charAt(Math.round(Math.random()*data.length));
+		}
+	document.title = status;
+	var rerun = "decrypt_helper('" + text + "'," + runs_left + "," + delay + "," + charvar + "," + max + ");"
+	var new_char = charvar + 1;
+	var next_char = "decrypt_helper('" + text + "'," + max + "," + delay + "," + new_char + "," + max + ");"
+	if(runs_left > 0){
+		setTimeout(rerun, delay);
+		}
+	else{
+		if (charvar < text.length){
+			setTimeout(next_char, Math.round(delay*(charvar+3)/(charvar+1)));
+			}
+		else
+			{
+			done = 1;
+			}
+		}
+	}
+}
+
+//if IE 4+ or NS 6+
+if (document.all||document.getElementById)
+statusIn(thetitle)
+</script>
+<!-- Конец титул -->
+
+
+<link rel="StyleSheet" type="text/css" href="style.css">
+</head>
+ <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="5" >
+
+	<tr valign="top">
+		<td colspan="2" height="145">
+		<!-- шапка -->
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" summary="">
+	<tr>
+		<td width="145" valign="middle" align="center" height="120"><img src="img/ogu.png" border="0" width="42" height="90" ><br></td>
+	<td align="center" valign="middle"><img src="img/CENTER.png" border="0" width="271" height="90" ></td>
+	<td align="left" width="145" valign="middle"><img src="img/comp.png" border="0" width="128" height="90" alt=""></td>
+	</tr>
+	<tr>
+		<td background="img/line.png" height="23" colspan="3" align="center"><img src="img/pix.jpg" border="0" width="1" height="1" alt=""><a href="right.htm" target="infa">ГЛАВНАЯ</a>&nbsp;::&nbsp;  <a href="about.htm" target="infa">О ПРОЕКТЕ</a>&nbsp;::&nbsp;<a href="book.htm" target="infa">ЛИТЕРАТУРА</a>&nbsp;::&nbsp; <a href="povtas.htm" target="infa">ПОВТАС</a></td>
+	</tr>
+</table>
+<!-- шапка конец-->
+</td>
+		
+	</tr>
+	
+	<tr>
+		<td width="185" valign="top" align="center" >
+		<!-- **********меню********** -->
+		<table width="180" cellpadding="10" cellspacing="0" class="osn" height="100%">
+	<tr>
+		<td valign="top" align="center" height="100%">
+		<br>
+<!-- ********************************* -->
+<div id="masterdiv">
+	<div class="menutitle" onclick="SwitchMenu('sub1')">Глава 1<br>Общие сведения о вычислительных сетях</div>
+	<span class="submenu" id="sub1">
+	
+ 	<a href="11.htm" target="infa">&nbsp&nbsp 1.1&nbsp&nbsp Назначение вычислительных сетей</a><br>
+ 	<a href="12.htm"target="infa">&nbsp&nbsp 1.2&nbsp&nbsp Архитектура "клиент-сервер"</a><br>
+ 	<a href="13.htm"target="infa">&nbsp&nbsp 1.3&nbsp&nbsp Классификация вычислительных сетей</a><br>
+ 	&nbsp&nbsp<a href="131.htm"target="infa">&nbsp&nbsp 1.3.1&nbsp&nbsp Локальные вычислительные сети</a><br>
+ 	&nbsp&nbsp<a href="132.htm"target="infa">&nbsp&nbsp 1.3.2&nbsp&nbsp Сети отделов, кампусов, корпоративные сети</a><br>
+	<a href="14.htm"target="infa">&nbsp&nbsp 1.4&nbsp&nbsp Сетевые топологии и методы доступа к среде передачи данных</a><br>
+	&nbsp&nbsp<a href="141.htm"target="infa">&nbsp&nbsp 1.4.1&nbsp&nbsp Шинная топология</a><br>
+	&nbsp&nbsp<a href="142.htm"target="infa">&nbsp&nbsp 1.4.2&nbsp&nbsp Звездообразная топология</a><br>
+	&nbsp&nbsp<a href="143.htm"target="infa">&nbsp&nbsp 1.4.3&nbsp&nbsp Кольцевая топология</a><br>
+	&nbsp&nbsp<a href="144.htm"target="infa">&nbsp&nbsp 1.4.4&nbsp&nbsp Смешанные топологии </a><br>
+	<a href="15.htm"target="infa">&nbsp&nbsp 1.5 Основные типы кабельных сред передачи данных</a><br>
+	&nbsp&nbsp<a href="151.htm"target="infa">&nbsp&nbsp 1.5.1&nbsp&nbsp Коаксиальный кабель</a><br>
+	&nbsp&nbsp<a href="152.htm"target="infa">&nbsp&nbsp 1.5.2&nbsp&nbsp Витая пара</a><br>
+	&nbsp&nbsp<a href="153.htm"target="infa">&nbsp&nbsp 1.5.3&nbsp&nbsp Оптоволоконный кабель</a><br>
+	<a href="16.htm"target="infa">&nbsp&nbsp 1.6&nbsp&nbsp Контрольные вопросы</a><br>
+	
+
+
+	</span>
+	<div class="menutitle" onclick="SwitchMenu('sub2')">Глава 2<br>Взаимодействие открытых систем </div>
+	<span class="submenu" id="sub2">
+<a href="21.htm" target="infa">&nbsp&nbsp 2.1&nbsp&nbsp Семиуровневая модель OSI </a><br>
+ 	<a href="22.htm"target="infa">&nbsp&nbsp 2.2&nbsp&nbsp Характеристика стеков коммуникационных протоколов</a><br>
+ 	&nbsp&nbsp<a href="221.htm"target="infa">&nbsp&nbsp 2.2.1&nbsp&nbsp Стек OSI</a><br>
+ 	&nbsp&nbsp<a href="222.htm"target="infa">&nbsp&nbsp 2.2.2&nbsp&nbsp Стек TCP/IP</a><br>
+ 	&nbsp&nbsp<a href="223.htm"target="infa">&nbsp&nbsp 2.2.3&nbsp&nbsp Стек IPX/SPX</a><br>
+	<a href="23.htm"target="infa">&nbsp&nbsp 2.3&nbsp&nbsp Контрольные вопросы</a><br>
+	
+	</span>
+	<div class="menutitle" onclick="SwitchMenu('sub3')">Глава 3<br>Коммуникационное оборудование</div>
+	<span class="submenu" id="sub3">
+    <a href="31.htm" target="infa">&nbsp&nbsp 3.1&nbsp&nbsp Устройства объединения сетей</a><br>
+ 	<a href="32.htm"target="infa">&nbsp&nbsp 3.2&nbsp&nbsp Физическая структуризация локальной сети. Повторители и концентраторы</a><br>
+ 	<a href="33.htm"target="infa">&nbsp&nbsp 3.3&nbsp&nbsp Логическая структуризация сети. Мосты и коммутаторы</a><br>
+	&nbsp&nbsp<a href="331.htm"target="infa">&nbsp&nbsp 3.3.1&nbsp&nbsp Как работает коммутатор</a><br>
+ 	<a href="34.htm"target="infa">&nbsp&nbsp 3.4&nbsp&nbsp Маршрутизаторы</a><br>
+	&nbsp&nbsp<a href="341.htm"target="infa">&nbsp&nbsp 3.4.1&nbsp&nbsp Примеры маршрутизации</a><br>
+	<a href="35.htm"target="infa">&nbsp&nbsp 3.5&nbsp&nbsp Контрольные вопросы</a><br>
+	
+	</span>
+	
+	<div class="menutitle" onclick="SwitchMenu('sub4')">Глава 4<br>Базовые технологии локальных сетей</div>
+	<span class="submenu" id="sub4">
+      <a href="41.htm" target="infa">&nbsp&nbsp 4.1&nbsp&nbsp Технология Ethernet</a><br>
+	  &nbsp&nbsp<a href="411.htm"target="infa">&nbsp&nbsp 4.1.1&nbsp&nbsp Метод доступа CSMA/CD</a><br>
+	  &nbsp&nbsp<a href="412.htm"target="infa">&nbsp&nbsp 4.1.2&nbsp&nbsp Спецификации физической среды Ethernet</a><br>
+ 	  &nbsp&nbsp<a href="413.htm"target="infa">&nbsp&nbsp 4.1.3&nbsp&nbsp Стандарт 10Base-5</a><br>
+	  &nbsp&nbsp<a href="414.htm"target="infa">&nbsp&nbsp 4.1.4&nbsp&nbsp Стандарт 10Base-2</a><br>
+	  &nbsp&nbsp<a href="415.htm"target="infa">&nbsp&nbsp 4.1.5&nbsp&nbsp Стандарт 10Base-T</a><br>
+	  &nbsp&nbsp<a href="416.htm"target="infa">&nbsp&nbsp 4.1.6&nbsp&nbsp Оптоволоконный Ethernet</a><br>
+	  &nbsp&nbsp<a href="417.htm"target="infa">&nbsp&nbsp 4.1.7&nbsp&nbsp Домен коллизий</a><br>
+	<a href="42.htm"target="infa">&nbsp&nbsp 4.2&nbsp&nbsp Технология Token Ring</a><br>
+	  &nbsp&nbsp<a href="421.htm"target="infa">&nbsp&nbsp 4.2.1&nbsp&nbsp Маркерный метод доступа к разделяемой среде</a><br>
+	  &nbsp&nbsp<a href="422.htm"target="infa">&nbsp&nbsp 4.2.2&nbsp&nbsp Физический уровень технологии Token Ring</a><br>
+ 	<a href="43.htm"target="infa">&nbsp&nbsp 4.3&nbsp&nbsp Технология FDDI</a><br>
+	  &nbsp&nbsp<a href="431.htm"target="infa">&nbsp&nbsp 4.3.1&nbsp&nbsp Особенности метода доступа FDDI</a><br>
+	  &nbsp&nbsp<a href="432.htm"target="infa">&nbsp&nbsp 4.3.2&nbsp&nbsp Сравнение FDDI с технологиями Ethernet и Token Ring</a><br>
+	<a href="44.htm"target="infa">&nbsp&nbsp 4.4&nbsp&nbsp Контрольные вопросы</a><br>
+	</span>
+	
+	<div class="menutitle" onclick="SwitchMenu('sub5')">Глава 5<br>Основы протокола<br> TCP/IP</div>
+	<span class="submenu" id="sub5">
+<a href="51.htm" target="infa">&nbsp&nbsp 5.1&nbsp&nbsp Классификация протоколов</a><br>
+<a href="521.htm" target="infa">&nbsp&nbsp 5.2&nbsp&nbsp Cетевые протоколы</a><br>
+	  &nbsp&nbsp<a href="521.htm"target="infa">&nbsp&nbsp 5.2.1&nbsp&nbsp Прокол IP</a><br>
+	  &nbsp&nbsp<a href="522.htm"target="infa">&nbsp&nbsp 5.2.2&nbsp&nbsp IP-адресация</a><br>
+ 	  &nbsp&nbsp<a href="523.htm"target="infa">&nbsp&nbsp 5.2.3&nbsp&nbsp Протокол ICMP</a><br>
+	  <a href="531.htm" target="infa">&nbsp&nbsp 5.3&nbsp&nbsp Транспортные протоколы</a><br>
+	  &nbsp&nbsp<a href="531.htm"target="infa">&nbsp&nbsp 5.3.1&nbsp&nbsp Протокол управления передачей TCP</a><br>
+	  &nbsp&nbsp<a href="532.htm"target="infa">&nbsp&nbsp 5.3.2&nbsp&nbsp Протокол дейтаграмм пользователя UDP</a><br>
+	<a href="54.htm"target="infa">&nbsp&nbsp 5.4&nbsp&nbsp Связь протоколов сетевого и транспортного уровней</a><br>
+	  &nbsp&nbsp<a href="541.htm"target="infa">&nbsp&nbsp 5.4.1&nbsp&nbsp Структура связей протокольных модулей</a><br>
+	 	<a href="55.htm"target="infa">&nbsp&nbsp 5.5&nbsp&nbsp Контрольные вопросы</a><br>
+	</span>
+	
+	<div class="menutitle" onclick="SwitchMenu('sub6')">Глава 6<br>Информационные сервисы Internet</div>
+	<span class="submenu" id="sub6">
+<a href="61.htm" target="infa">&nbsp&nbsp 6.1&nbsp&nbsp История сети Internet</a><br>
+<a href="62.htm" target="infa">&nbsp&nbsp 6.2&nbsp&nbsp Основные инструменты Internet</a><br>
+<a href="63.htm" target="infa">&nbsp&nbsp 6.3&nbsp&nbsp Система доменных имен</a><br>
+	  &nbsp&nbsp<a href="631.htm"target="infa">&nbsp&nbsp 6.3.1&nbsp&nbsp Принципы организации DNS</a><br>
+	  &nbsp&nbsp<a href="632.htm"target="infa">&nbsp&nbsp 6.3.2&nbsp&nbsp Регистрация доменных имен</a><br>
+ 	  &nbsp&nbsp<a href="633.htm"target="infa">&nbsp&nbsp 6.3.3&nbsp&nbsp Механизм поиска IP-адреса</a><br>
+	  <a href="64.htm" target="infa">&nbsp&nbsp 6.4&nbsp&nbsp Электронная почта в Internet</a><br>
+	  &nbsp&nbsp<a href="641.htm"target="infa">&nbsp&nbsp 6.4.1&nbsp&nbsp Протокол SMTP</a><br>
+	  &nbsp&nbsp<a href="642.htm"target="infa">&nbsp&nbsp 6.4.2&nbsp&nbsp Протокол РОР</a><br>
+	   &nbsp&nbsp<a href="643.htm"target="infa">&nbsp&nbsp 6.4.3&nbsp&nbsp Формат представления почтовых сообщений MIME </a><br>
+	<a href="65.htm"target="infa">&nbsp&nbsp 6.5&nbsp&nbsp Удаленный доступ к ресурсам сети. Протокол Telnet </a><br>
+	<a href="66.htm"target="infa">&nbsp&nbsp 6.6&nbsp&nbsp Служба архивов FTP </a><br>
+	  &nbsp&nbsp<a href="661.htm"target="infa">&nbsp&nbsp 6.6.1&nbsp&nbsp Протокол FTP</a><br>
+	 	<a href="67.htm"target="infa">&nbsp&nbsp 6.7&nbsp&nbsp Универсальный идентификатор ресурсов URI</a><br>
+	&nbsp&nbsp<a href="671.htm"target="infa">&nbsp&nbsp 6.7.1&nbsp&nbsp Схемы адресации ресурсов Internet</a><br>
+	  <a href="68.htm"target="infa">&nbsp&nbsp 6.8&nbsp&nbsp Служба WWW</a><br>
+	  &nbsp&nbsp<a href="681.htm"target="infa">&nbsp&nbsp 6.8.1&nbsp&nbsp Схема работы WWW сервера</a><br>
+	   &nbsp&nbsp<a href="682.htm"target="infa">&nbsp&nbsp 6.8.2&nbsp&nbsp Архитектура построения системы </a><br>
+<a href="69.htm" target="infa">&nbsp&nbsp 6.9&nbsp&nbsp Протокол обмена гипертекстовой информацией</a><br>
+<a href="610.htm" target="infa">&nbsp&nbsp 6.10&nbsp&nbsp Язык гипертекстовой разметки HTML</a><br>
+<a href="611.htm" target="infa">&nbsp&nbsp 6.11&nbsp&nbsp Контрольные вопросы</a><br>
+
+	</span>
+</div>
+
+<!-- ********************************* -->
+</td>
+	</tr>
+</table>
+
+	<!-- конец меню -->	
+		</td>
+		
+		<td  width="100%">
+		
+		<!-- информация -->
+		<iframe src="right.htm" name="infa" width="100%" height="100%" marginheight="0" marginwidth="10" frameborder="no" scrolling="auto" framespacing="0" class="inf"></iframe>
+	
+		<!-- конец информация -->
+		</td>
+		
+		
+	</tr>
+	<tr> <td align="center"></td></tr> 
+	<tr>
+	<td align="center" target="infa"> <a href="javascript:history.back()">НАЗАД</a> </td>
+	</tr>
+
+	
+</table>
+</body>
+</html>

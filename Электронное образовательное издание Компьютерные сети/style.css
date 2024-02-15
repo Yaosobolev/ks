@@ -1,0 +1,166 @@
+/* At-Rules */
+@charset "windows-1251";
+
+
+/* CSS Document */
+body {margin:0px;padding:0px; background-color: #d8f9d7;}
+font.big {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 16pt;
+	MARGIN-BOTTOM: 4pt;
+	COLOR: #000000;
+	font-family:Times New Roman;
+}
+font.mid {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 13pt;
+	MARGIN-BOTTOM: 4pt;
+	COLOR: #005000;
+}
+font.norm {
+	FONT-SIZE: 14pt;
+	MARGIN-BOTTOM: 4pt;
+	COLOR: #000000;
+	font-weight: normal;
+}
+table.osn{
+	border-top: 1px solid #007d00;
+	border-right: 2px solid #007d00;
+	border-bottom: 2px solid #007d00;
+	border-left: 1px solid #007d00;
+}
+iframe.inf
+{
+    border-top: 1px solid #007d00;
+	border-right: 2px solid #007d00;
+	border-bottom: 2px solid #007d00;
+	border-left: 1px solid #007d00;
+}
+	
+td.lv{
+	border-top: 1px solid  #333333;
+	border-right: 1px none #333333;
+	border-bottom: 1px none  #333333;
+	border-left: 1px solid  #333333;
+}	
+td.lvp{
+	border-top: 1px solid  #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px none  #333333;
+	border-left: 1px solid  #333333;
+}
+td.lvn{
+	border-top: 1px solid  #333333;
+	border-right: 1px none #333333;
+	border-bottom: 1px solid  #333333;
+	border-left: 1px solid  #333333;
+}
+td.lvpn{
+	border-top: 1px solid  #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid  #333333;
+	border-left: 1px solid  #333333;
+}
+
+ul.my
+{
+	text-indent: 0pt
+	letter-spacing;
+
+	clip:  rect(auto auto auto 10px);
+	margin: 17px;
+	padding: 0px;
+	word-spacing: normal;
+	white-space: normal;
+}
+.menutitle{background-color: #66d166;
+ color:#333333;  border:  1px solid #007d00; 
+ cursor:  pointer; font: bold; font-size: 14px;  margin-bottom: 1px; 
+ padding:  1px; text-align: center; text-decoration: none; width: 160px}
+.menutitle:hover {text-decoration: none; background-color:#c7f5c7;} 
+
+.submenu{
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+a.pr {text-decoration: none;  color:#005000;  font-size: 13px;}
+
+
+
+
+a.menutitle {background-color: #007d00;
+ color:#333333;  border:  1px solid #333333; 
+ cursor:  pointer; font: lighter; font-size: 17px;  margin-bottom: 5px; 
+ padding:  2px; text-align: center; text-decoration: none; width: 175px}
+
+a.o {font-size: 14px;  color:#333333;}
+
+a.n {font-size: 14px; color:#333333;}
+td.menu{background-color:#007d00;}
+
+a.menutitle:hover {text-decoration: none;; background-color:#007d00;}
+
+FORM {display: inline;}
+
+td.ram {
+	background-color: #007d00;
+	padding:2px;
+	text-align:center;
+	font-size: 12px;
+	font-weight:bold;
+	color:#ffffff;
+	word-spacing: normal;
+	letter-spacing: 1pt;
+}
+td.ramn {   background-color: #007d00;   padding:2px;  text-align:center; font-size: 12px; font-weight:normal;  color:#333333; border:  1px solid #007d00;}
+td.ramnt {   background-color: #81ff81;   padding:2px;  text-align:center; font-size: 13px; font-weight:normal;  color:#000000; border:  1px solid #007d00;}
+
+font.kn {border:1px solid #ffae34;   background-color:#f9f7c8;   padding:6px;  text-align:center;  font-weight:bold;  color:#ffae34;}
+
+font.pr {font-weight:normal;font-size: 13px;}
+font.kino {font-weight:normal;font-size: 13px;}
+
+a.nav {padding:2px;font-weight:bold;  color:##e50d36;  font-size: 14px;}
+
+td.ramt {border:1px solid #007d00;}
+td.ramk {border:  1px solid #007d00;}
+td.ramkk{   background-color: #EEF2Ff;   padding:2px;  text-align:center; font-size: 12px; font-weight:bold;   color:#3E475C;}
+
+font.d {background-color: #ccccff; padding:  2px 2px 2px}
+
+a {text-decoration:none ;   color:#333333;   font-size: 12px;}
+
+
+a:hover {text-decoration: underline;   color:#3f6e0c}
+
+a.r {text-decoration: none;   color:#333333;   font-size: 12px;   font-weight: bold;}
+
+a.r:hover {text-decoration: none;   color:#4B649F;   font-size: 12px;   font-weight: bold;}
+font.zag{
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: 700;
+	color: #333333;
+	border-bottom-style: none;
+	border-bottom-color: #FFFFFF;
+}
+font.ntz{
+	font-size: 14px;
+	font-weight: normal;
+	color: #000066;
+	text-align: left;
+}
+
+font.skb{
+	font-size: 10px;
+	color: #CC3300;
+}
+
+	
+table.osn{
+	border-top: 1px solid #007d00;
+	border-right: 2px solid #007d00;
+	border-bottom: 2px solid #007d00;
+	border-left: 1px solid #007d00;
+};	

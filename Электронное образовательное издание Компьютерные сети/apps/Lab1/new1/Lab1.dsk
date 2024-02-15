@@ -1,0 +1,474 @@
+[Closed Files]
+File_0=SourceModule,'c:\program files\borland\delphi7\source\vcl\CheckLst.pas',0,1,5,31,20,0,0
+File_1=SourceModule,'c:\program files\borland\delphi7\source\vcl\StdCtrls.pas',0,1,893,18,895,0,0
+File_2=SourceModule,'c:\program files\borland\delphi7\source\rtl\common\classes.pas',0,1,470,1,444,0,0
+File_3=SourceModule,'c:\program files\borland\delphi7\source\rtl\Sys\system.pas',0,1,8378,1,8390,0,0
+File_4=SourceModule,'c:\program files\borland\delphi7\source\vcl\ExtCtrls.pas',0,1,1196,1,1206,0,0
+File_5=SourceModule,'c:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmInfo.pas',0,1,19,19,37,1,0
+File_6=SourceModule,'c:\program files\borland\delphi7\source\vcl\Controls.pas',0,1,133,7,140,0,0
+File_7=SourceModule,'c:\program files\borland\delphi7\source\vcl\Dialogs.pas',0,1,325,10,403,0,0
+File_8=SourceModule,'c:\program files\borland\delphi7\source\vcl\Forms.pas',0,1,2543,1,2552,0,0
+File_9=SourceModule,'c:\program files\borland\delphi7\source\vcl\Graphics.pas',0,1,2177,17,2192,0,0
+
+[Modules]
+Module0=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uMain.pas
+Module1=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmAbout.pas
+Module2=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmList.pas
+Module3=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmCost.pas
+Module4=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmFloor.pas
+Module5=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmPrice.pas
+Module6=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\umAnimateLines.pas
+Module7=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uCmn.pas
+Module8=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uAdvDevises.pas
+Module9=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uDevise.pas
+Module10=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uLines.pas
+Module11=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uFloor.pas
+Count=12
+EditWindowCount=1
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uMain.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmAbout.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmList.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmCost.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmFloor.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmPrice.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\umAnimateLines.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uCmn.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uAdvDevises.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uDevise.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uLines.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uFloor.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\Program Files\Borland\Delphi7\Projects\ProjectGroup1.bpg]
+FormState=0
+FormOnTop=0
+
+[c:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\Lab1.dpr]
+FormState=0
+FormOnTop=0
+
+[EditWindow0]
+ViewCount=12
+CurrentView=0
+View0=0
+View1=1
+View2=2
+View3=3
+View4=4
+View5=5
+View6=6
+View7=7
+View8=8
+View9=9
+View10=10
+View11=11
+CodeExplorer=CodeExplorer@EditWindow0
+MessageView=MessageView@EditWindow0
+Create=1
+Visible=1
+State=0
+Left=30
+Top=126
+Width=1006
+Height=569
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=998
+ClientHeight=542
+LeftPanelSize=219
+LeftPanelClients=WatchWindow,CodeExplorer@EditWindow0
+LeftPanelData=00000400010000000B000000576174636857696E646F771E0200000000000001DB000000000000000100000000760100000000000001000000001E0200000C000000436F64654578706C6F726572FFFFFFFF
+RightPanelSize=0
+BottomPanelSize=0
+BottomPanelClients=MessageView@EditWindow0
+BottomPanelData=00000400010000000B0000004D65737361676556696577E60300000000000002550000000000000001000000000000000000000000010000000000040000000000000100000000D703000000000000010000000000040000000000000100000000D7030000000000000100000000D7030000000000000100000000D703000000000000010000000000040000000000000100000000D7030000000000000100000000E6030000000000000100000000E603000000000000FFFFFFFF
+
+[View0]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uMain.pas
+CursorX=1
+CursorY=288
+TopLine=266
+LeftCol=1
+
+[View1]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmPrice.pas
+CursorX=1
+CursorY=114
+TopLine=91
+LeftCol=1
+
+[View2]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmCost.pas
+CursorX=1
+CursorY=46
+TopLine=31
+LeftCol=1
+
+[View3]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmList.pas
+CursorX=23
+CursorY=9
+TopLine=4
+LeftCol=1
+
+[View4]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmFloor.pas
+CursorX=9
+CursorY=208
+TopLine=166
+LeftCol=1
+
+[View5]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uFloor.pas
+CursorX=43
+CursorY=149
+TopLine=127
+LeftCol=1
+
+[View6]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uLines.pas
+CursorX=15
+CursorY=40
+TopLine=43
+LeftCol=1
+
+[View7]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uDevise.pas
+CursorX=1
+CursorY=97
+TopLine=74
+LeftCol=1
+
+[View8]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\ufmAbout.pas
+CursorX=31
+CursorY=36
+TopLine=22
+LeftCol=1
+
+[View9]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uAdvDevises.pas
+CursorX=1
+CursorY=46
+TopLine=29
+LeftCol=1
+
+[View10]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\uCmn.pas
+CursorX=8
+CursorY=27
+TopLine=1
+LeftCol=1
+
+[View11]
+Module=C:\work\kontr\пятый курс (зима)\Работы\Сети\Лабораторные\Лабораторная №1\Программа\umAnimateLines.pas
+CursorX=1
+CursorY=27
+TopLine=7
+LeftCol=1
+
+[Watches]
+Count=1
+Watch0='FileSeek(F, 0, 1)',256,0,18,1,0,'Watches'
+
+[WatchWindow]
+WatchColumnWidth=100
+WatchShowColumnHeaders=1
+Create=1
+Visible=0
+State=0
+Left=0
+Top=12
+Width=268
+Height=358
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=268
+ClientHeight=358
+TBDockHeight=737
+LRDockWidth=268
+Dockable=1
+
+[Breakpoints]
+Count=0
+
+[AddressBreakpoints]
+Count=0
+
+[Main Window]
+Create=1
+Visible=1
+State=0
+Left=1
+Top=0
+Width=1024
+Height=105
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1016
+ClientHeight=78
+
+[ProjectManager]
+Create=1
+Visible=0
+State=0
+Left=369
+Top=372
+Width=438
+Height=303
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=430
+ClientHeight=279
+TBDockHeight=303
+LRDockWidth=438
+Dockable=1
+
+[CPUWindow]
+Create=1
+Visible=0
+State=0
+Left=85
+Top=101
+Width=853
+Height=565
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=845
+ClientHeight=538
+DumpPane=79
+DisassemblyPane=187
+RegisterPane=231
+FlagPane=64
+
+[AlignmentPalette]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=107
+Width=156
+Height=82
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=150
+ClientHeight=60
+
+[PropertyInspector]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=371
+Width=190
+Height=397
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=182
+ClientHeight=373
+TBDockHeight=397
+LRDockWidth=190
+Dockable=1
+SplitPos=85
+ArrangeBy=Name
+SelectedItem=Caption
+ExpandedItems=Pen
+HiddenCategories=
+
+[BreakpointWindow]
+Create=1
+Visible=0
+State=0
+Left=143
+Top=285
+Width=737
+Height=197
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=729
+ClientHeight=173
+TBDockHeight=197
+LRDockWidth=737
+Dockable=1
+Column0Width=100
+Column1Width=75
+Column2Width=200
+Column3Width=200
+Column4Width=75
+Column5Width=75
+
+[ObjectTree]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=105
+Width=190
+Height=264
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=182
+ClientHeight=240
+TBDockHeight=264
+LRDockWidth=190
+Dockable=1
+
+[DebugLogView]
+Create=1
+Visible=0
+State=0
+Left=297
+Top=263
+Width=635
+Height=291
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=627
+ClientHeight=267
+TBDockHeight=291
+LRDockWidth=635
+Dockable=1
+
+[ToDo List]
+Create=1
+Visible=0
+State=0
+Left=277
+Top=259
+Width=470
+Height=250
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=462
+ClientHeight=226
+TBDockHeight=250
+LRDockWidth=470
+Dockable=1
+Column0Width=200
+Column1Width=30
+Column2Width=100
+Column3Width=70
+Column4Width=70
+SortOrder=4
+ShowHints=1
+ShowChecked=1
+
+[ModuleWindow]
+Create=1
+Visible=0
+State=0
+Left=258
+Top=220
+Width=638
+Height=355
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=630
+ClientHeight=331
+TBDockHeight=355
+LRDockWidth=638
+Dockable=1
+Column0Width=125
+Column1Width=100
+Column2Width=155
+EntryPointPane=225
+CompUnitPane=104
+
+[MessageHintFrm]
+Create=1
+Visible=0
+State=0
+Left=481
+Top=423
+Width=383
+Height=195
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=375
+ClientHeight=171
+TBDockHeight=195
+LRDockWidth=383
+Dockable=1
+
+[CodeExplorer@EditWindow0]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=12
+Width=219
+Height=530
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=219
+ClientHeight=530
+TBDockHeight=737
+LRDockWidth=219
+Dockable=1
+
+[MessageView@EditWindow0]
+Create=1
+Visible=0
+State=0
+Left=12
+Top=0
+Width=986
+Height=85
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=986
+ClientHeight=85
+TBDockHeight=85
+LRDockWidth=443
+Dockable=1
+
+[DockHosts]
+DockHostCount=0
+

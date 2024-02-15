@@ -1,0 +1,8 @@
+obj\Debug\сети_лаб2.exe
+obj\Debug\сети_лаб2.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\сети_лаб2.Form1.resources
+obj\Debug\сети_лаб2.Properties.Resources.resources
+obj\Debug\сети_лаб2.csproj.GenerateResource.Cache
+bin\Debug\сети_лаб2.exe
+bin\Debug\сети_лаб2.pdb
